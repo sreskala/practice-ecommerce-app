@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/clothes.svg'
 import { auth } from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
 
 //styles
 import './header.styles.scss';
@@ -36,4 +37,8 @@ const Header = ({ currentUser }) => (
     //Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 );
 
-export default Header;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+});
+
+export default connect(mapStateToProps)(Header);
