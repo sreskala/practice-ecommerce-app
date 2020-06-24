@@ -62,8 +62,9 @@ class SignIn extends Component {
                         label="Password"
                         handleChange={this.handleChange}/>
                     <div className="buttons">
-                    <CustomButton type="submit">SIGN IN</CustomButton>
-                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn >Sign in with Google</CustomButton>
+                    <CustomButton type="submit" style={{ fontSize: '.65em'}}>SIGN IN</CustomButton>
+                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn 
+                    style={{ fontSize: '.65em'}} >Sign in with Google</CustomButton>
                     </div>
                     
                 </form>

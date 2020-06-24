@@ -8,7 +8,9 @@ import './cart-dropdown.styles.scss';
 const CartDropdown = () => (
     <div className="cart-dropdown">
         <div className="cart-items" />
-        <CustomButton>GO TO CHECKOUT</CustomButton>
+        <CustomButton
+        style={{ fontSize: '.65em'}}
+        >GO TO CHECKOUT</CustomButton>
     </div>
 )
 
