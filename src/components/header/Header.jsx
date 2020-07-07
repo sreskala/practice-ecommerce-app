@@ -20,6 +20,10 @@ const Header = ({ currentUser, hidden }) => (
         </Link>
         <h1 className="title">The Groovy Store</h1>
         <div className="options">
+            <div className="user">
+                Welcome {currentUser.displayName}
+            </div>
+            
             <Link to="/shop" className="option">
                 SHOP
             </Link>
